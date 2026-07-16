@@ -31,17 +31,17 @@ Built and compared three regression models:
 Compared models using MAE and RMSE, and prioritized interpretability over raw predictive accuracy given the business goal.
 
 ## Key Findings
-Vehicle type is one of the strongest price drivers — pickups and trucks sell for roughly $5,000 more than a comparable SUV.
+- Vehicle type is one of the strongest price drivers — pickups and trucks sell for roughly $5,000 more than a comparable SUV.
 
-Fuel type matters — diesel-powered vehicles price notably higher than gas, hybrid, or other fuel types.
+- Fuel type matters — diesel-powered vehicles price notably higher than gas, hybrid, or other fuel types.
 
-Drivetrain and engine size — four-wheel drive and larger (8-cylinder) engines are associated with higher prices.
+- Drivetrain and engine size — four-wheel drive and larger (8-cylinder) engines are associated with higher prices.
 
-Age and mileage remain reliable value drivers, with a clear, consistent relationship to price.
+- Age and mileage remain reliable value drivers, with a clear, consistent relationship to price.
 
-Condition, surprisingly, did not show a clean or trustworthy pricing pattern in this dataset.
+- Condition, surprisingly, did not show a clean or trustworthy pricing pattern in this dataset.
 
 ## Next Steps
-Investigate condition_unknown: Listings missing a reported condition priced higher than expected, which doesn't have an obvious explanation yet and is worth digging into further.
+- Investigate condition_unknown: Listings missing a reported condition priced higher than expected, which doesn't have an obvious explanation yet and is worth digging into further.
 
-Recover model-level signal: model was dropped due to high cardinality (20K+ unique values). Grouping rare models into an "other" bucket instead of dropping the column entirely could recover useful signal without blowing up the feature space.
+- Recover model-level signal: model was dropped due to high cardinality (20K+ unique values). Grouping rare models into an "other" bucket instead of dropping the column entirely could recover useful signal without blowing up the feature space.
