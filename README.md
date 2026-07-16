@@ -22,11 +22,11 @@ Visualized price distributions and relationships with continuous variables (year
 ### Modeling:
 Built and compared three regression models:
 
-Baseline Linear Regression
+- Baseline Linear Regression
 
-Lasso Regression (tuned via GridSearchCV)
+- Lasso Regression (tuned via GridSearchCV)
 
-Linear Regression on a reduced feature set chosen via SequentialFeatureSelector (15 features)
+- Linear Regression on a reduced feature set chosen via SequentialFeatureSelector (15 features)
 ### Evaluation:
 Compared models using MAE and RMSE, and prioritized interpretability over raw predictive accuracy given the business goal.
 
